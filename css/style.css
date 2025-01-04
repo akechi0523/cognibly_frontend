@@ -1,0 +1,313 @@
+html {
+    font-family:'Inter', sans-serif;
+    background-color: #F5F5F5;
+}
+
+body {
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sign-in {
+    border: #C2C2C2 2px solid;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.sign-up {
+    border: black 2px solid;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero1, .pricing, .hero2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero1::before {
+    background-image: url("../images/lighting.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1400px 500px;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.hero1-container {
+    background-color: black; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 80px 150px 0; 
+    margin-bottom: 20px;
+}
+
+.hero1-title, .hero2-title {
+    font-size: 50px; 
+    font-family: Satoshi-Regular; 
+    font-weight: bold; 
+    color: white; 
+    text-align: center; 
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.hero1-btn1 {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero1-btn2 {
+    background-color: rgba(45, 45, 45, 0.4);;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.hero1-image-container {
+    width: 100%;
+    height: 500px;
+    border-top: #838383 1px solid;
+    border-left: #838383 1px solid;
+    border-right: #838383 1px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(45, 45, 45, 0.4);;
+    padding: 25px 25px 0;
+}
+
+.hero1-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.how-it-works, 
+.why-cognibly, 
+.customers {
+    padding: 80px 100px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.question-mark, 
+.key-mark {
+    width: 160px; 
+    background-color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 16px; 
+    border-radius: 15px; 
+    border: none; 
+    box-shadow: 2px 2px 4px #838383;
+    margin-bottom: 32px;
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+.item-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    border: #838383 2px solid; 
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.pricing-container {
+    padding: 80px 100px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-mark {
+    width: 110px; 
+    background-color: rgba(45, 45, 45, 0.4);; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 16px; 
+    border-radius: 15px; 
+    border: none;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.black-card {
+    width: 33%;
+    height: 100%;
+    background-color: rgba(45,45,45,0.4);
+    border: none;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.white-card {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+li.plan-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+li.plan-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.upgrade-btn {
+    width: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.book-btn {
+    width: 100%;
+    background-color: #434343;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.pricing::before {
+    background-image: url("../images/blur2.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 450px;
+    background-size: 1400px 500px;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.customers-mark {
+    width: 140px; 
+    background-color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 16px; 
+    border-radius: 15px; 
+    border: none; 
+    box-shadow: 2px 2px 4px #838383;
+    margin-bottom: 32px;
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+.hero2-container {
+    background-color: black;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: none;
+    border-radius: 20px;
+}
+
+.hero2::before {
+    background-image: url("../images/blur3.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 1000px 600px;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.footer {
+
+    margin-top: 40px;
+    padding-inline: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    list-style-type: none;
+}
+
+li.footer-item:not(:last-child) {
+    margin-bottom: 16px;
+}
