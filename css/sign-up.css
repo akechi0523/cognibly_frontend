@@ -87,6 +87,8 @@ input[type=text], input[type=password] {
     font-size: 18px;
     font-weight: bold;
     color: white;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
 }
 
