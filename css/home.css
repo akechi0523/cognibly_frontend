@@ -237,6 +237,7 @@ body {
     border: #d8d8d8 1px solid;
     border-radius: 15px;
     padding: 8px 12px;
+    font-size: 14px;
 }
 
 .jobs-container {
@@ -250,10 +251,14 @@ body {
     margin: auto;
 }
 
+.performance-switch-container {
+    display: none;
+    margin: auto;
+}
 .job-fresh,
 .performance-switch {
     width: 250px;
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
@@ -667,8 +672,8 @@ input[type=text] {
         display: block;
     }
     .job-fresh,
-    .performance-switch {
-        display: flex;
+    .performance-switch-container {
+        display: block;
     }
     .jobs-mobile {
         display: flex;
