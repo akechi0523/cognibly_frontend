@@ -167,6 +167,7 @@ body {
 
 .status-info {
     font-size: 20px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -242,6 +243,126 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.job-fresh-container {
+    display: none;
+    margin: auto;
+}
+
+.job-fresh,
+.performance-switch {
+    width: 250px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border: #d8d8d8 1px solid;
+    border-radius: 20px;
+}
+
+.switch-job,
+.switch-performance {
+    width: 33%;
+    text-align: center;
+    padding-block: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.jobs-mobile {
+    display: none;
+    gap: 20px;
+    overflow-x: scroll;    
+}
+
+.jobs-mobile::-webkit-scrollbar {
+    display: none;
+}
+
+.job-card {
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: #d8d8d8 1px solid;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.job-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #67C7FD;
+}
+
+.job-card-id {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.job-card hr {
+    width: 0;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-right: #636363 1px solid;
+}
+
+.job-card-date {
+    font-size: 14px;
+    color: #636363;
+}
+
+.job-card-company {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+}
+
+.job-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Satoshi-Regular;
+    color: black;
+}
+
+.job-card-salary,
+.job-card-working-type {
+    width: fit-content;
+    font-size: 14px;
+    color: #2D5A74;
+    border:#2D5A74 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.job-card-btn {
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding-block: 10px;
 }
 
 .job {
@@ -469,6 +590,7 @@ input[type=text] {
     .main {
         width: 100%;
         margin: 0;
+        margin-bottom: 100px;
         padding: 30px;
         gap: 30px;
     }
@@ -490,7 +612,71 @@ input[type=text] {
     .status hr {
         display: none;
     }
+    .status-container {
+        padding: 0;
+    }
     .status-container hr {
+        display: none;
+    }
+    .status-container .status-item:last-child {
+        display: none;
+    }
+    .status-item {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 20px;
+        border: #d8d8d8 1px solid;
+        border-radius: 15px;
+    }
+    .status-item > img {
+        display: none;
+    }
+    .status-content {
+        gap: 8px;
+    }
+    .status-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #636363;
+    }
+    .status-info {
+        font-size: 18px;
+    }
+    .top-jobs,
+    .performance {
+        gap: 25px;
+    }
+    .top-jobs-title-container,
+    .performance-title-container {
+        gap: 12px;
+    }
+    .top-jobs-title,
+    .performance-title {
+        font-size: 20px;
+    }
+    .new-jobs {
+        font-size: 12px;
+    }
+    .freshness {
+        display: none;
+    }
+    .jobs-container .job {
+        display: none;
+    }
+    .job-fresh-container {
+        display: block;
+    }
+    .job-fresh,
+    .performance-switch {
+        display: flex;
+    }
+    .jobs-mobile {
+        display: flex;
+    }
+    .performance-percent {
+        font-size: 12px;
+    }
+    .performance-option {
         display: none;
     }
     .user {
