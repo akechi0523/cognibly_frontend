@@ -735,9 +735,6 @@ input[type=text] {
     .freshness {
         display: none;
     }
-    .jobs-container .job {
-        display: none;
-    }
     .jobs-mobile {
         overflow-x: scroll;
         flex-wrap: nowrap;
@@ -760,6 +757,9 @@ input[type=text] {
     }
     .user {
         display: none;
+    }
+    #loading {
+        margin-block: 0;
     }
 }
 
