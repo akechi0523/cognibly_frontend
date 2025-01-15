@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../../css/jobs.css">    
     <link rel="stylesheet" href="../../css/satoshi.css">
 </head>
 <body>
-    <div style="display: flex; width: 100%;">
+    <div>
         <div class="menu">
             <div style="display: flex; flex-direction: column; gap: 60px;">
                 <div class="logo">
@@ -61,278 +61,122 @@
                 </div>
             </div>
         </div>
-        <div class="main">
-            <!--For Responsive-->
-            <div class="mobile-header">
-                <div class="logo-mobile">
-                    <img width="42px" height="42px" src="../../images/logo.png" alt="logo">
-                    <div>Cognibly</div>
+        <div style="display: flex;">
+            <div class="main">
+                <!--For Responsive-->
+                <div class="mobile-header">
+                    <div class="logo-mobile">
+                        <img width="42px" height="42px" src="../../images/logo.png" alt="logo">
+                        <div>Cognibly</div>
+                    </div>
+                    <img width="42px" height="42px" src="../../images/avatar-mobile-header.svg" alt="logo">
                 </div>
-                <img width="42px" height="42px" src="../../images/avatar-mobile-header.svg" alt="logo">
-            </div>
-
-            <div class="hello">
-                <div class="hello-title">Job Listings</div>
-                <div class="hello-text">Apply for jobs here!</div>
-            </div>
-
-            <div class="top-jobs">
-                <div class="top-jobs-header">
-                    <div class="top-jobs-title-container">
-                        <div class="top-jobs-title">Top Jobs For You</div>
-                        <hr>
-                        <div class="new-jobs">40+ New</div>
-                    </div>
-                    <div class="freshness">
-                        <div class="grey-text-2">Job Freshness</div>
-                        <hr>
-                        <div class="freshness-option">
-                            <div>Today</div>
-                            <img width="12px" height="10px" src="../../images/arrow-down-small.svg" alt="arrow-down">
-                        </div>
-                    </div>
-                    <img id="job-filter" class="filter-icon" width="24px" height="24px" src="../../images/filter-icon.png" alt="filter">
+    
+                <div class="hello">
+                    <div class="hello-title">Job Listings</div>
+                    <div class="hello-text">Apply for jobs here!</div>
                 </div>
-                <div class="jobs-container">
-                    <!--Jobs(Mobile)-->
-                    <div class="job-fresh-container">
-                        <div class="job-fresh">
-                            <div id="job-fresh-daily-mobile" class="switch-job">Daily</div>
-                            <div id="job-fresh-weekly-mobile" class="switch-job selected">Weekly</div>
-                            <div id="job-fresh-monthly-mobile" class="switch-job">Monthly</div>
+    
+                <div class="top-jobs">
+                    <div class="top-jobs-header">
+                        <div class="top-jobs-title-container">
+                            <div class="top-jobs-title">Top Jobs For You</div>
+                            <hr>
+                            <div class="new-jobs">40+ New</div>
                         </div>
-                        <div style="font-size: 14px; color: #636363; text-align: center; margin-top: 8px;">Job Freshness</div>
+                        <div class="freshness">
+                            <div class="grey-text-2">Job Freshness</div>
+                            <hr>
+                            <div class="freshness-option">
+                                <div>Today</div>
+                                <img width="12px" height="10px" src="../../images/arrow-down-small.svg" alt="arrow-down">
+                            </div>
+                        </div>
+                        <img id="job-filter" class="filter-icon" width="24px" height="24px" src="../../images/filter-icon.png" alt="filter">
                     </div>
-
-                    <div class="jobs-mobile">
-                        <div class="job-card">
-                            <div class="job-card-details">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">99</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; align-items: last baseline;">
-                                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                                        Google
-                                        <div class="job-card-title">Product Designer</div>
-                                    </div>
-                                    <img width="40px" height="40px" src="../../images/google-icon.png" alt="company-logo">
-
-                                </div>
-                                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                    <div class="job-card-role">Senior Level</div>
-                                    <div class="job-card-working-type">Full-Time</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
+                    <div class="jobs-container">
+                        <!--Jobs(Mobile)-->
+                        <div class="job-fresh-container">
+                            <div class="job-fresh">
+                                <div id="job-fresh-daily-mobile" class="switch-job">Daily</div>
+                                <div id="job-fresh-weekly-mobile" class="switch-job selected">Weekly</div>
+                                <div id="job-fresh-monthly-mobile" class="switch-job">Monthly</div>
                             </div>
-                            <div class="job-card-apply">
-                                <div>
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-location">San Francisco, CA</div>
-                                </div>
-                               <div class="job-card-btn">Apply</div>
-                            </div>
-                            <div class="job-card-download">
-                                <div class="resume">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="resume">
-                                    Resume
-                                </div>
-                                <hr style="width: 0; height: 100%; border: none; border-left: #d8d8d8 1px solid;">
-                                <div class="cover-letter">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="cover-letter">
-                                    Cover Letter
-                                </div>
-                            </div>
+                            <div style="font-size: 14px; color: #636363; text-align: center; margin-top: 8px;">Job Freshness</div>
                         </div>
+    
+                        <div id="jobs-mobile" class="jobs-mobile">
 
-                        <div class="job-card">
-                            <div class="job-card-details" style="background-color: #9CFFAC;">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">70</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; align-items: last baseline;">
-                                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                                        Google
-                                        <div class="job-card-title">Product Designer</div>
-                                    </div>
-                                    <img width="40px" height="40px" src="../../images/google-icon.png" alt="company-logo">
-
-                                </div>
-                                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                    <div class="job-card-role">Senior Level</div>
-                                    <div class="job-card-working-type">Full-Time</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-apply">
-                                <div>
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-location">San Francisco, CA</div>
-                                </div>
-                               <div class="job-card-btn">Apply</div>
-                            </div>
-                            <div class="job-card-download">
-                                <div class="resume">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="resume">
-                                    Resume
-                                </div>
-                                <hr style="width: 0; height: 100%; border: none; border-left: #d8d8d8 1px solid;">
-                                <div class="cover-letter">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="cover-letter">
-                                    Cover Letter
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="job-card">
-                            <div class="job-card-details" style="background-color: #FDEE67;">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">50</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; align-items: last baseline;">
-                                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                                        Google
-                                        <div class="job-card-title">Product Designer</div>
-                                    </div>
-                                    <img width="40px" height="40px" src="../../images/google-icon.png" alt="company-logo">
-
-                                </div>
-                                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                    <div class="job-card-role">Senior Level</div>
-                                    <div class="job-card-working-type">Full-Time</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-apply">
-                                <div>
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-location">San Francisco, CA</div>
-                                </div>
-                               <div class="job-card-btn">Apply</div>
-                            </div>
-                            <div class="job-card-download">
-                                <div class="resume">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="resume">
-                                    Resume
-                                </div>
-                                <hr style="width: 0; height: 100%; border: none; border-left: #d8d8d8 1px solid;">
-                                <div class="cover-letter">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="cover-letter">
-                                    Cover Letter
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="job-card">
-                            <div class="job-card-details" style="background-color: #FF6161;">
-                                <div style="display: flex; gap: 12px; align-items: center">
-                                    <div class="job-card-id">13</div>
-                                    <hr>
-                                    <div class="job-card-date">Added 12/13/2024</div>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; align-items: last baseline;">
-                                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                                        Google
-                                        <div class="job-card-title">Product Designer</div>
-                                    </div>
-                                    <img width="40px" height="40px" src="../../images/google-icon.png" alt="company-logo">
-
-                                </div>
-                                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                    <div class="job-card-role">Senior Level</div>
-                                    <div class="job-card-working-type">Full-Time</div>
-                                    <div class="job-card-working-type">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job-card-apply">
-                                <div>
-                                    <div class="job-card-salary">$120k - $200k</div>
-                                    <div class="job-card-location">San Francisco, CA</div>
-                                </div>
-                               <div class="job-card-btn">Apply</div>
-                            </div>
-                            <div class="job-card-download">
-                                <div class="resume">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="resume">
-                                    Resume
-                                </div>
-                                <hr style="width: 0; height: 100%; border: none; border-left: #d8d8d8 1px solid;">
-                                <div class="cover-letter">
-                                    <img width="19px" height="19px" src="../../images/download-icon.png" alt="cover-letter">
-                                    Cover Letter
-                                </div>
-                            </div>
+                        <div id="loading">
+                            <div class="spinner"></div>
+                            <p>Loading...</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="user">
-            <div class="user-form-1">
-                <div class="user-info-1">
-                    <img width="55px" height="55px" src="../../images/user-avatar1.png" alt="user">
-                    <div>
-                        <div class="user-title-1">Senior Developer</div>
-                        <div class="user-name-1">Reid Thomas</div>
+            <div class="user">
+                <div class="user-form-1">
+                    <div class="user-info-1">
+                        <img width="55px" height="55px" src="../../images/user-avatar1.png" alt="user">
+                        <div>
+                            <div class="user-title-1">Senior Developer</div>
+                            <div class="user-name-1">Reid Thomas</div>
+                        </div>
+                    </div>
+                    <div style="font-size: 14px; color: white;">
+                        <div style="margin-top: 20px; margin-bottom: 12px;">Looing for roles in:</div>
+                        <div class="user-role-container">
+                            <div class="user-role">
+                                product designer
+                                <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
+                            </div>
+                            <div class="user-role">
+                                graphic design
+                                <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
+                            </div>
+                            <div class="user-role">
+                                ui/ux
+                                <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
+                            </div>
+                            <div>+5 more</div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="user-form-2">
+                    <div class="user-info-2">
+                        <img width="55px" height="55px" src="../../images/user-avatar2.png" alt="user">
+                        <div>
+                            <div class="user-title-2">Junior Developer</div>
+                            <div class="user-name-2">Reid Thomas</div>
+                        </div>
                     </div>
                 </div>
-                <div style="font-size: 14px; color: white;">
-                    <div style="margin-top: 20px; margin-bottom: 12px;">Looing for roles in:</div>
-                    <div class="user-role-container">
-                        <div class="user-role">
-                            product designer
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div class="user-role">
-                            graphic design
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div class="user-role">
-                            ui/ux
-                            <img width="17px" height="17px" src="../../images/close-icon.png" alt="close">
-                        </div>
-                        <div>+5 more</div>
-                    </div>
-                </div>                
-            </div>
-            <div class="user-form-2">
-                <div class="user-info-2">
-                    <img width="55px" height="55px" src="../../images/user-avatar2.png" alt="user">
-                    <div>
-                        <div class="user-title-2">Junior Developer</div>
-                        <div class="user-name-2">Reid Thomas</div>
-                    </div>
+                <div style="display: flex; justify-content: center;">
+                    <img id="addProfile" width="24px" height="24px" src="../../images/add-icon.png" alt="add">
                 </div>
-            </div>
-            <div style="display: flex; justify-content: center;">
-                <img id="addProfile" width="24px" height="24px" src="../../images/add-icon.png" alt="add">
-            </div>
-            <div class="filter">
-                <div style="display: flex; justify-content: space-between; font-size: 16px; align-items: center; margin-bottom: 30px;">
-                    Filters
-                    <img width="25px" height="25px" src="../../images/eidt-icon.png" alt="edit">
-                </div>
-                <div class="filter-form">
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Location</div>
-                        <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
+                <div class="filter">
+                    <div style="display: flex; justify-content: space-between; font-size: 16px; align-items: center; margin-bottom: 30px;">
+                        Filters
+                        <img width="25px" height="25px" src="../../images/eidt-icon.png" alt="edit">
                     </div>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Salary Range</div>
-                        <div style="display: flex; align-items: center;">
-                            <input id="salary-range-from" type="text" placeholder="$120k" name="salary-range-from" required>
-                            <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
-                            <input id="salary-range-to" type="text" placeholder="$150k" name="salary-range-to" required>
+                    <div class="filter-form">
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div class="grey-text-2">Location</div>
+                            <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
                         </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="grey-text-2">Lorem ipsum</div>
-                        <input id="location" type="text" placeholder="Lorem ipsum" name="location" required>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div class="grey-text-2">Salary Range</div>
+                            <div style="display: flex; align-items: center;">
+                                <input id="salary-range-from" type="text" placeholder="$120k" name="salary-range-from" required>
+                                <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
+                                <input id="salary-range-to" type="text" placeholder="$150k" name="salary-range-to" required>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div class="grey-text-2">Lorem ipsum</div>
+                            <input id="location" type="text" placeholder="Lorem ipsum" name="location" required>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -477,6 +321,102 @@
         </div>
     </div>
     <script>
+        // Load job data using AJAX/JQuery
+        $(document).ready(function() {
+            let itemsPerPage = 4;
+            let offset = 0;
+            let loading = false;
+
+            function loadItems() {
+                if (loading) return;
+                loading = true;
+                $('#loading').show();
+
+                // Fetch JSON file
+                $.getJSON('../../json/job_data.json', function(data) {
+                    setTimeout(function() {
+                        if (offset >= data.length) {
+                            $('#loading').hide();
+                            return;
+                        }
+                        let itemsToLoad = data.slice(offset, offset + itemsPerPage);
+
+                        // Append items to the container
+                        itemsToLoad.forEach(function(item) {
+                            $('#jobs-mobile').append(`
+                                <div class="job-card">
+                                    <div class="job-card-details">
+                                        <div style="display: flex; gap: 12px; align-items: center">
+                                            <div class="job-card-id">${item.id}</div>
+                                            <hr>
+                                            <div class="job-card-date">Added ${item.date}</div>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; align-items: last baseline;">
+                                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                                Google
+                                                <div class="job-card-title">Product Designer</div>
+                                            </div>
+                                            <img width="40px" height="40px" src="../../images/google-icon.png" alt="company-logo">
+        
+                                        </div>
+                                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                            <div class="job-card-role">${item.role[0]}</div>
+                                            <div class="job-card-role">${item.role[1]}</div>
+                                            <div class="job-card-role">${item.role[2]}</div>
+                                        </div>
+                                    </div>
+                                    <div class="job-card-apply">
+                                        <div>
+                                            <div class="job-card-salary">$${item.salary[0]}k - $${item.salary[1]}k</div>
+                                            <div class="job-card-location">${item.location}</div>
+                                        </div>
+                                    <div class="job-card-btn">Apply</div>
+                                    </div>
+                                    <div class="job-card-download">
+                                        <div class="resume">
+                                            <img width="19px" height="19px" src="../../images/download-icon.png" alt="resume">
+                                            Resume
+                                        </div>
+                                        <hr style="width: 0; height: 100%; border: none; border-left: #d8d8d8 1px solid;">
+                                        <div class="cover-letter">
+                                            <img width="19px" height="19px" src="../../images/download-icon.png" alt="cover-letter">
+                                            Cover Letter
+                                        </div>
+                                    </div>
+                                </div> 
+                            `);
+                        });
+
+                        offset += itemsPerPage;
+                        console.log(offset);
+                        $('#loading').hide();
+                        loading = false;
+                    }, 1000);
+                }).fail(function(jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    console.error("Request Failed: " + err);
+                    $('#loading').hide();
+                    loading = false;
+                });
+            }
+
+            loadItems();
+
+            // Event listener for scrolling
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+                    console.log($(window).scrollTop() + $(window).height())
+                    loadItems();
+                }
+            });
+            $('#jobs-mobile').on('scroll', function() {
+                // Check if the user has scrolled to the right end of the div
+                if ($(this).scrollLeft() + $(this).innerWidth() >= $(this)[0].scrollWidth - 100) {
+                    loadItems();
+                }
+            });
+        });
+
         // Job Fresh Mobile
         const switchesJobs = document.querySelectorAll('.switch-job');
         switchesJobs.forEach(switchBtn => {
