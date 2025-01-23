@@ -591,13 +591,13 @@ input[type=text], textarea {
     cursor: pointer;
 }
 
-.profile-drpdown {
+.profile-dropdown {
     display: none;
 }
 
 .dropdown-content {
     display: none;
-    width: calc(100% - 60px);
+    width: 100%;
     position: absolute;
     background-color: #F5F5F5;
     z-index: 10;
@@ -674,7 +674,7 @@ input[type=text], textarea {
     .hello-text {
         display: none;
     }
-    .profile-drpdown {
+    .profile-dropdown {
         position: relative;
         display: inline-block;
     }
