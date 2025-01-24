@@ -376,7 +376,7 @@ body {
 }
 
 .job {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     color: black;
@@ -389,21 +389,36 @@ body {
     align-items: center;
 }
 
-.job-id {
-    font-size: 18px;
-    font-weight: 600;
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+td {
+    height: 40px;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+td img {
+    vertical-align: top;
 }
 
 .company {
     display: flex;
-    gap: 12px;
     align-items: center;
 }
 
-.job-timeline {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+
+.company img {
+    margin-right: 8px;
+}
+.job-timeline img {
+    margin-right: 5px;
+}
+
+.job-id {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .performance-percent {
@@ -749,6 +764,9 @@ input[type=text], textarea {
         display: none;
     }
     .user {
+        display: none;
+    }
+    .job-table {
         display: none;
     }
 }
