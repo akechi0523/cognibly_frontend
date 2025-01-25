@@ -452,7 +452,8 @@ body {
     margin-top: 4px;
 }
 
-.user-role-container {
+.user-role-container, 
+.locations-container {
     display: flex;
     gap: 12px;
     align-items: center;
@@ -464,6 +465,18 @@ body {
     align-items: center;
     gap: 4px;
     background-color: rgba(45,45,45,.4);
+    padding: 10px 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #D8D8D8;
+    color: #636363;
+    font-size: 14px;
     padding: 10px 8px;
     border: none;
     border-radius: 15px;
