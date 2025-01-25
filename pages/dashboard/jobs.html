@@ -206,36 +206,111 @@
     <!--Profile Modal-->
     <div id="profileModal" class="profile-modal">
         <div class="modal-container">
-            <div style="display: flex; flex-direction: column; gap: 20px; padding-inline: 30px;">
+            <div class="profile-modal-details">
                 <div class="profile-title">Profile</div>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">First Name</div>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 80px;">
+                    <div class="grey-text-small">First Name</div>
                     <input id="first-name" type="text" placeholder="Jane" name="first-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Last Name</div>
+                    <div class="grey-text-small">Last Name</div>
                     <input id="last-name" type="text" placeholder="Doe" name="last-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Profile Name</div>
+                    <div class="grey-text-small">Profile Name</div>
                     <input id="profile-name" type="text" placeholder="Profile Name" name="profile-name" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Email</div>
+                    <div class="grey-text-small">Email</div>
                     <input id="email" type="text" placeholder="janedoe@gmail.com" name="email" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Phone Number</div>
+                    <div class="grey-text-small">Phone Number</div>
                     <input id="phone" type="text" placeholder="123-456-789" name="phone" required>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="grey-text-2">Location</div>
+                    <div class="grey-text-small">Location</div>
                     <input id="location" type="text" placeholder="Los Angeles, CA" name="location" required>
                 </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Preferred Industries</div>
+                    <input id="prefer-industry" type="text" placeholder="Enter your desired industry" name="prefer-industry" required>
+                    <div class="locations-container">
+                        <div class="location-item">
+                            Technology  
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                        <div class="location-item">
+                            Healthcare
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                        <div class="location-item">
+                            Creative Arts
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Preferred Roles</div>
+                    <input id="prefer-role" type="text" placeholder="Enter your desired role" name="prefer-role" required>
+                    <div class="locations-container">
+                        <div class="location-item">
+                            Product Designer
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                        <div class="location-item">
+                            UI/UX Designer
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                        <div class="location-item">
+                            Front-end Dev
+                            <img width="17px" height="17px" src="../../images/close-icon-grey.png" alt="close">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Current Job</div>
+                    <input id="company" type="text" placeholder="Company" name="company" required>
+                    <input id="job-title" type="text" placeholder="Job Title" name="title" required>
+                    <div style="display: flex; align-items: center;">
+                        <input id="job-start" type="text" placeholder="Start Date" name="salary-range-from-modal" required>
+                        <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
+                        <input id="job-end" type="text" placeholder="End Date" name="salary-range-to-modal" required>
+                    </div>
+                    <label class="grey-text-small" style="display: flex; align-items: center; gap: 4px;">
+                        <input type="checkbox" name="current-job"> This is my current job
+                    </label>
+                    <textarea id="job-description" placeholder="Describe your job" rows="5"></textarea>
+                    <div style="display: flex; align-items: center; justify-content: space-between;" class="grey-text-small">
+                        Add another experience
+                        <img width="20px" height="20px" style="cursor: pointer;" src="../../images/add-icon.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Education</div>
+                    <input id="school" type="text" placeholder="School" name="school" required>
+                    <input id="major" type="text" placeholder="Major" name="major" required>
+                    <div style="display: flex; align-items: center;">
+                        <input id="school-start" type="text" placeholder="Start Date" name="salary-range-from-modal" required>
+                        <hr style="width: 12px; border: none; border-top: #d8d8d8 1px solid; margin-inline: 4px;">
+                        <input id="school-end" type="text" placeholder="End Date" name="salary-range-to-modal" required>
+                    </div>
+                    <label class="grey-text-small" style="display: flex; align-items: center; gap: 4px;">
+                        <input type="checkbox" name="current-education"> Curretly a Student
+                    </label>
+                    <div style="display: flex; align-items: center; justify-content: space-between;" class="grey-text-small">
+                        Add another experience
+                        <img width="20px" height="20px" style="cursor: pointer;" src="../../images/add-icon.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div class="grey-text-small">Awards and Certifications</div>
+                    <input id="award-name" type="text" placeholder="Name" name="award-name" required>
+                    <input id="award-date" type="text" placeholder="Date received" name="award-date" required>
+                </div>
             </div>
-            <hr style="width: 100%; border: none; border-top: #d8d8d8 1px solid; margin-top: 20px; margin-bottom: 30px;">
-            <div style="display: flex; justify-content: end; padding-inline: 30px;">
-                <div style="display: flex; gap: 12px;">
+            <div class="profile-modal-footer">
+                <div style="display: flex; gap: 12px; align-items: center;">
                     <div id="cancel">Cancel</div>
                     <div id="confirm">Save</div>
                 </div>

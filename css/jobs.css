@@ -488,7 +488,7 @@ body {
     gap: 20px;
 }
 
-input[type=text] {
+input[type=text], textarea {
     background-color: #f5f5f5;
     width: 100%;
     font-size: 14px;
@@ -526,8 +526,51 @@ input[type=text] {
     position: relative;
 }
 
+.profile-modal-details {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding-inline: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box; 
+    border-bottom: #d8d8d8 2px solid;
+    height: 600px; 
+    overflow-y: scroll; 
+}
+
+.profile-modal-details::-webkit-scrollbar {
+    display: none;
+}
+
 .profile-modal .modal-container {
-    padding-block: 30px;
+    height: 700px;
+}
+
+.profile-modal-footer {
+    background-color: #f5f5f5; 
+    display: flex; 
+    justify-content: end; 
+    position: absolute; 
+    bottom: 0; 
+    right: 30px; 
+    height: 98px;
+}
+
+.profile-title {
+    width: 340px;
+    height: 50px;
+    position: fixed;
+    background-color: #f5f5f5; 
+    font-size: 22px;
+    font-family: Satoshi-Regular;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.grey-text-small {
+    font-size: 14px;
+    color: #636363;
 }
 
 .job-filter-modal-details {
